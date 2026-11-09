@@ -7,16 +7,17 @@ name: Check dist/
 permissions:
   contents: read
 
-on:
-  push:
-    branches:
-      - main
-    paths-ignore:
-      - '**.md'
-  pull_request:
-    paths-ignore:
-      - '**.md'
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches:
+#       - main
+#     paths-ignore:
+#       - '**.md'
+#   pull_request:
+#     paths-ignore:
+#       - '**.md'
+# 
 env:
   # A pipe-separated array of files to ignore when comparing the expected and actual dist/ directories,
   # which are used as a regular expression filter in the `grep` command.

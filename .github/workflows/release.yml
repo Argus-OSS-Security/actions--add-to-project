@@ -1,14 +1,15 @@
 name: Release
 
-on:
-  workflow_dispatch:
-    inputs:
-      dry-run:
-        description: 'Run in dry-run mode (no tags, releases, or pushes)'
-        required: true
-        default: true
-        type: boolean
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_dispatch:
+#     inputs:
+#       dry-run:
+#         description: 'Run in dry-run mode (no tags, releases, or pushes)'
+#         required: true
+#         default: true
+#         type: boolean
+# 
 permissions:
   contents: write
   issues: write
